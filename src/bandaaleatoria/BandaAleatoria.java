@@ -10,12 +10,18 @@ package bandaaleatoria;
  * @author estudiantes
  */
 public class BandaAleatoria {
-
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+      Cuerdas guitarra = new Cuerdas();
+        
+            guitarra.AfinarGuitarra();
+        
+        
+      
     
+}
+   
 }

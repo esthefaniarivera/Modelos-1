@@ -23,7 +23,7 @@ public class Instrumento {
    
 
     String[] instrumento;
-
+    
     public Instrumento() {
         this.instrumento = new String [4];
     }

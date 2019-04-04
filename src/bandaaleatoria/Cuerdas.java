@@ -11,17 +11,13 @@ package bandaaleatoria;
  */
 public class Cuerdas {
     
-    String tipo;
-    public Cuerdas() {
-       tipo= "Guitarra"; 
-    }
+    String tipo = "Guitarra";
     
     
     
+    // metodo afinar guitarra
+    public void AfinarGuitarra(){
+         System.out.println("Afinando guitarra");
     
-// metodo afinar guitarra
-public void AfinarGuitarra(){
-    System.out.println("Afinando guitarra");
-    
-}    
+   }    
 }
