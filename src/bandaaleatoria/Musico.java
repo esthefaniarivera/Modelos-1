@@ -7,7 +7,7 @@ package bandaaleatoria;
 
 /**
  *
- * @author estudiantes
+ * @author ESTEFA
  */
 public class Musico {
     String miembro[]= new String[20];
