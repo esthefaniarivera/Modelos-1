@@ -10,7 +10,15 @@ package bandaaleatoria;
  * @author estudiantes
  */
 public class Musico {
-    String Musicos[]= new String[20];
+    String miembro[]= new String[20];
+    int n=1;
     
-    
+//arreglo de musico    
+public String[] LlenarMusico(){    
+for (int i=0;i<20;i++){
+    miembro [i]="musico " + n;
+    n++;   
+}
+        return miembro;
+}  
 }
