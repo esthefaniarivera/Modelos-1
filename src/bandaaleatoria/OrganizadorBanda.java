@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package bandaaleatoria;
+import java.util.Arrays;
 import java.util.Random;
 /**
  *
@@ -16,35 +17,68 @@ public class OrganizadorBanda {
    
    Instrumento ins= new Instrumento();
    String [] i= new String[4];
+      
+   
+   
+   int numIntegrantes=  (int) (Math.random()*20)+1;
    
    
    
-   
-   public int[] ordenMusico(){
-        int numIntegrantes=  (int) (Math.random()*19);
-        int n=numIntegrantes;  //numeros aleatorios
-        int k=n;  //auxiliar;
-        int[] numeros=new int[n];
-        int[] resultado=new int[n];
-        Random rnd=new Random();
-        int res;
-
-        for(int i=0;i<n;i++){
-            numeros[i]=i+1;
-        }
-        
-        for(int i=0;i<n;i++){
-            res=rnd.nextInt(k);            
-            resultado[i]=numeros[res];
-            numeros[res]=numeros[k-1];
-            k--;
-            
-        }
-        return resultado;
-        
-        }
-        
+   public String[] Organizador(){
+       m=musico.LlenarMusico();
+       String[] bandaCompleta= new String[numIntegrantes];
+       i=ins.LlenarInstrumento();
+       
+       for (int j = 0; j <= numIntegrantes; j++) {
+           bandaCompleta[j]=m[j];
+                   
+                          
+       }
+    return bandaCompleta;
    }
+   
+   public String[] OrganizadorInstrumentos(){
+        String[] asignar= new String[numIntegrantes]; 
+        i=ins.LlenarInstrumento();
+        
+        for (int j = 0; j <= numIntegrantes; j++) {
+          
+           int aleatorioInstrumento = (int) (Math.random()*4)+1;
+           asignar[j]= i[aleatorioInstrumento];
+           
+                          
+       }
+       return asignar;
+       
+       
+       
+   }
+   public void  ArmarBanda(){
+       String[] banda=new String[numIntegrantes]; 
+       String[] instru=new String[numIntegrantes];
+       banda=Organizador();
+       instru=OrganizadorInstrumentos();
+       String[] laBanda=new String[numIntegrantes]; 
+       
+       for (int j = 0; j <= numIntegrantes; j++){
+           
+           laBanda[j]=banda[j]+instru[j];
+           System.out.println((laBanda[j]));
+       }
+       
+       
+      
+       
+   }
+   
+}   
+       
+   
+   
+   
+        
+
+   
    
    
     
