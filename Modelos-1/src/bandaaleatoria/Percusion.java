@@ -15,11 +15,6 @@ public class Percusion {
     
     String tipo= "Tambor";
     
-    
-    
-// metodo afinar tambor
-public void AfinarTambor(){
-    System.out.println("Afinando tambor");
-}    
+      
 }
 

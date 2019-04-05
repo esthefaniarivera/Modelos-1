@@ -5,17 +5,38 @@
  */
 package bandaaleatoria;
 
+import java.util.Arrays;
+import java.util.Random;
+
 /**
  *
- * @author estudiantes
+ * @author ESTEFA
  */
 public class BandaAleatoria {
-
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        
+        OrganizadorBanda organizador= new OrganizadorBanda();
+        organizador.GestionarBanda();
+
+        
+        
+        
+        
+        
+        }
+        
+   }
+   
+        
+        
+        
+        
+      
     
-}
+
+   
+

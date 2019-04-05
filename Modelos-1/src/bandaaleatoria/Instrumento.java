@@ -18,17 +18,22 @@ import bandaaleatoria.Voz;*/
  * @author estudiantes
  */
 public class Instrumento {
+    //Creamos Los objetos de cada instrumento.
     Cuerdas guitarra = new Cuerdas();
-    
+    Viento trompeta = new Viento();
+    Voz canto = new Voz();
+    Percusion tambor = new Percusion();
    
-
-    String[] instrumento;
-
-    public Instrumento() {
-        this.instrumento = new String [4];
+    //Llenar array de instrumentos.
+    public String[] LlenarInstrumento(){
+        String[] instrumento = new String[4];
+        instrumento[0] = guitarra.tipo ;   
+        instrumento[1] = trompeta.tipo ;
+        instrumento[2] = canto.tipo ;
+        instrumento[3] = tambor.tipo ;
+        
+        return instrumento;
     }
-    
-    
     
     
 }

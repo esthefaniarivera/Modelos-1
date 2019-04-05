@@ -13,12 +13,6 @@ public class Voz {
     
     
     String tipo= "Voz";
-    
-    
-    
-// metodo afinar guitarra
-public void AfinarVoz(){
-    System.out.println("Calentando voz");
-}    
+      
     
 }

@@ -13,12 +13,5 @@ public class Viento {
     
     
     String tipo= "Trompeta";
-    
-    
-    
-// metodo afinar trompeta
-public void AfinarTrompeta(){
-    System.out.println("Afinando trompeta");
-}    
-    
+        
 }
